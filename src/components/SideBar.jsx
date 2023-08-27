@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaBars, FaShoppingCart } from "react-icons/fa";
 import Image from "next/image";
 import { logo } from "@/assets";
+// import { logo } from "@/assets";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
