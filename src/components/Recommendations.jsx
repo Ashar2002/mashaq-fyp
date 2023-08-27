@@ -8,7 +8,7 @@ const Recommendations = () => {
       <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
         <ul className="grid gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-4">
           <li className="border border-teal-500 rounded-lg">
-            <a href="#" className="block overflow-hidden group">
+            <a href="/product-details" className="block overflow-hidden group">
               <Image
                 src={shirt1}
                 alt=""
@@ -31,7 +31,7 @@ const Recommendations = () => {
           </li>
 
           <li className="border border-teal-500 rounded-lg">
-            <a href="#" className="block overflow-hidden group">
+            <a href="/product-details" className="block overflow-hidden group">
               <Image
                 src={shirt1}
                 alt=""
@@ -54,7 +54,7 @@ const Recommendations = () => {
           </li>
 
           <li className="border border-teal-500 rounded-lg">
-            <a href="#" className="block overflow-hidden group">
+            <a href="/product-details" className="block overflow-hidden group">
               <Image
                 src={shirt1}
                 alt=""
@@ -77,7 +77,7 @@ const Recommendations = () => {
           </li>
 
           <li className="border border-teal-500 rounded-lg">
-            <a href="#" className="block overflow-hidden group">
+            <a href="/product-details" className="block overflow-hidden group">
               <Image
                 src={shirt1}
                 alt=""

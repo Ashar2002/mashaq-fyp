@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import InnerBanner from "@/components/InnerBanner";
 import Sidebar from "@/components/SideBar";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const categories = () => {
@@ -14,7 +15,7 @@ const categories = () => {
         <InnerBanner />
         <div className="container mx-auto">
           <div className="grid place-items-center h-full place-content-center w-full xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-16 justify-between items-start gap-2">
-            <div className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
+            <Link href="/product-details" className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
               <Image
                 src={shirt1}
                 alt="shirt1"
@@ -26,8 +27,8 @@ const categories = () => {
                 <p className="text-gray-500 text-lg">Dummy Shirt</p>
                 <p className="text-black font-bold">$ 9.99</p>
               </div>
-            </div>
-            <div className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
+            </Link>
+            <Link href="/product-details" className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
               <Image
                 src={shirt4}
                 alt="shirt1"
@@ -39,8 +40,8 @@ const categories = () => {
                 <p className="text-gray-500 text-lg">Dummy Shirt</p>
                 <p className="text-black font-bold">$ 9.99</p>
               </div>
-            </div>
-            <div className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
+            </Link>
+            <Link href="/product-details" className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
               <Image
                 src={shirt1}
                 alt="shirt1"
@@ -52,8 +53,8 @@ const categories = () => {
                 <p className="text-gray-500 text-lg">Dummy Shirt</p>
                 <p className="text-black font-bold">$ 9.99</p>
               </div>
-            </div>
-            <div className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
+            </Link>
+            <Link href="/product-details" className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
               <Image
                 src={shirt4}
                 alt="shirt1"
@@ -65,8 +66,8 @@ const categories = () => {
                 <p className="text-gray-500 text-lg">Dummy Shirt</p>
                 <p className="text-black font-bold">$ 9.99</p>
               </div>
-            </div>
-            <div className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
+            </Link>
+            <Link href="/product-details" className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
               <Image
                 src={shirt1}
                 alt="shirt1"
@@ -78,8 +79,8 @@ const categories = () => {
                 <p className="text-gray-500 text-lg">Dummy Shirt</p>
                 <p className="text-black font-bold">$ 9.99</p>
               </div>
-            </div>
-            <div className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
+            </Link>
+            <Link href="/product-details" className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
               <Image
                 src={shirt4}
                 alt="shirt1"
@@ -91,8 +92,8 @@ const categories = () => {
                 <p className="text-gray-500 text-lg">Dummy Shirt</p>
                 <p className="text-black font-bold">$ 9.99</p>
               </div>
-            </div>
-            <div className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
+            </Link>
+            <Link href="/product-details" className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
               <Image
                 src={shirt1}
                 alt="shirt1"
@@ -104,8 +105,8 @@ const categories = () => {
                 <p className="text-gray-500 text-lg">Dummy Shirt</p>
                 <p className="text-black font-bold">$ 9.99</p>
               </div>
-            </div>
-            <div className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
+            </Link>
+            <Link href="/product-details" className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
               <Image
                 src={shirt4}
                 alt="shirt1"
@@ -117,8 +118,8 @@ const categories = () => {
                 <p className="text-gray-500 text-lg">Dummy Shirt</p>
                 <p className="text-black font-bold">$ 9.99</p>
               </div>
-            </div>
-            <div className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
+            </Link>
+            <Link href="/product-details" className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
               <Image
                 src={shirt1}
                 alt="shirt1"
@@ -130,8 +131,8 @@ const categories = () => {
                 <p className="text-gray-500 text-lg">Dummy Shirt</p>
                 <p className="text-black font-bold">$ 9.99</p>
               </div>
-            </div>
-            <div className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
+            </Link>
+            <Link href="/product-details" className="border border-teal-500 rounded-lg pt-3 my-2 mb-3 gap-3">
               <Image
                 src={shirt4}
                 alt="shirt1"
@@ -143,7 +144,7 @@ const categories = () => {
                 <p className="text-gray-500 text-lg">Dummy Shirt</p>
                 <p className="text-black font-bold">$ 9.99</p>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
 
