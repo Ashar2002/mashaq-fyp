@@ -1,4 +1,4 @@
-import logo from "../assets/images/header_logo.svg"
+import logo from "../assets/images/header_logo.png"
 import shirt1 from "../assets/images/shirt1.jpg"
 import shirt2 from "../assets/images/shirt2.jpg"
 import shirt3 from "../assets/images/shirt3.jpg"

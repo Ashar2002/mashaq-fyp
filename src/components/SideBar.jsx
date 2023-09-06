@@ -12,7 +12,7 @@ const Sidebar = () => {
   };
   return (
     <div className="bg-white w-full relative z-0">
-      <div className="container mx-auto flex justify-between items-center py-4 px-4">
+      <div className="container mx-auto flex justify-between items-center px-4">
         <div className="max-w-[200px] w-full ">
           <Link href="/">
             <Image src={logo} width={220} height={220} alt="logo" />
@@ -20,13 +20,13 @@ const Sidebar = () => {
         </div>
         <div className="max-w-[130px] flex items-center justify-between w-full gap-5">
           <Link
-            className="rounded-md group-hover:bg-white group-hover:border-teal-600 border-2 bg-teal-600 flex items-center justify-center gap-2 h-12 w-12 text-sm font-medium text-white shadow"
+            className="rounded-md group-hover:bg-white group-hover:border-lightbrown-0 border-2 bg-lightbrown-0 flex items-center justify-center gap-2 h-12 w-12 text-sm font-medium text-white shadow"
             href="/"
           >
-            <FaShoppingCart className="group-hover:text-teal-600" />
+            <FaShoppingCart className="group-hover:text-lightbrown-0" />
           </Link>
           <FaBars
-            className="text-teal-600 text-2xl cursor-pointer"
+            className="text-lightbrown-0 text-2xl cursor-pointer"
             onClick={toggleSidebar}
           />
         </div>
@@ -39,7 +39,7 @@ const Sidebar = () => {
         >
           <div className="px-4 py-6 relative mt-[15%]">
             <span
-              className="text-transparent text-clip bg-clip-text bg-teal-500 font-bold text-lg absolute right-5 -top-3 cursor-pointer"
+              className="text-transparent text-clip bg-clip-text bg-lightbrown-0 font-bold text-lg absolute right-5 -top-3 cursor-pointer"
               onClick={toggleSidebar}
             >
               ❌
@@ -52,7 +52,7 @@ const Sidebar = () => {
               <ul className="mt-6 space-y-1">
                 <li>
                   <details className="group [&_summary::-webkit-details-marker]:hidden">
-                    <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-black hover:bg-teal-100 hover:text-teal-600">
+                    <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-black hover:bg-bisque-0 hover:text-lightbrown-0">
                       <Link href="/categories" className="text-sm font-medium">
                         {" "}
                         Men's{" "}
@@ -78,7 +78,7 @@ const Sidebar = () => {
                       <li>
                         <a
                           href=""
-                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-teal-100 hover:text-teal-600"
+                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-lightbrown-0"
                         >
                           Top Wear
                         </a>
@@ -87,7 +87,7 @@ const Sidebar = () => {
                       <li>
                         <a
                           href=""
-                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-teal-100 hover:text-teal-600"
+                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-lightbrown-0"
                         >
                           Bottom Wear
                         </a>
@@ -95,7 +95,7 @@ const Sidebar = () => {
                       <li>
                         <a
                           href=""
-                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-teal-100 hover:text-teal-600"
+                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-lightbrown-0"
                         >
                           Foot Wear
                         </a>
@@ -106,7 +106,7 @@ const Sidebar = () => {
 
                 <li>
                   <details className="group [&_summary::-webkit-details-marker]:hidden">
-                    <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-black hover:bg-teal-100 hover:text-teal-600">
+                    <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-black hover:bg-bisque-0 hover:text-lightbrown-0">
                       <Link href="/categories" className="text-sm font-medium">
                         {" "}
                         Women's{" "}
@@ -132,7 +132,7 @@ const Sidebar = () => {
                       <li>
                         <a
                           href=""
-                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-teal-100 hover:text-teal-600"
+                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-lightbrown-0"
                         >
                           Top Wear
                         </a>
@@ -141,7 +141,7 @@ const Sidebar = () => {
                       <li>
                         <a
                           href=""
-                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-teal-100 hover:text-teal-600"
+                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-lightbrown-0"
                         >
                           Bottom Wear
                         </a>
@@ -149,7 +149,7 @@ const Sidebar = () => {
                       <li>
                         <a
                           href=""
-                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-teal-100 hover:text-teal-600"
+                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-lightbrown-0"
                         >
                           Foot Wear
                         </a>
@@ -157,7 +157,7 @@ const Sidebar = () => {
                       <li>
                         <a
                           href=""
-                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-teal-100 hover:text-teal-600"
+                          className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-lightbrown-0"
                         >
                           Bags
                         </a>

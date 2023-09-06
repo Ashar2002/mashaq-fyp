@@ -54,7 +54,7 @@ const ImageUpload = () => {
           />
         </label>
       </div>
-      <div className="max-w-[400px] max-h-full mx-auto border border-teal-600 mt-6 rounded-lg h-[400px]">
+      <div className="max-w-[400px] max-h-full mx-auto border border-lightbrown-0 mt-6 rounded-lg h-[400px]">
         {uploadedImage ? (
           <img
             src={uploadedImage}

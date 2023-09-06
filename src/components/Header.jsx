@@ -16,7 +16,7 @@
 //       <div className="mx-auto relative max-w-screen-xl px-3 sm:px-6 lg:px-8">
 //         <div className="flex h-16 items-center justify-between">
 //           <div className="md:flex md:items-center md:gap-12">
-//             <a className="block text-teal-600" href="/">
+//             <a className="block text-lightbrown-0" href="/">
 //               <span className="sr-only">Home</span>
 //               <Image
 //                 className="max-w-[220px] w-full"
@@ -49,13 +49,13 @@
 //                   </a>
 //                   <div className="hidden group-hover/categories:block md:hidden absolute -left-5 rounded-md top-full bg-teal-500 min-w-[140px] py-2">
 //                     <ul className=" text-white flex flex-col items-center text-sm">
-//                       <li className="text-white font-medium capitalize text-base w-full text-center py-2 hover:bg-white hover:text-teal-600">
+//                       <li className="text-white font-medium capitalize text-base w-full text-center py-2 hover:bg-white hover:text-lightbrown-0">
 //                         home
 //                       </li>
-//                       <li className="text-white font-medium capitalize text-base w-full text-center py-2 hover:bg-white hover:text-teal-600">
+//                       <li className="text-white font-medium capitalize text-base w-full text-center py-2 hover:bg-white hover:text-lightbrown-0">
 //                         shop
 //                       </li>
-//                       <li className="text-white font-medium capitalize text-base w-full text-center py-2 hover:bg-white hover:text-teal-600">
+//                       <li className="text-white font-medium capitalize text-base w-full text-center py-2 hover:bg-white hover:text-lightbrown-0">
 //                         categories
 //                       </li>
 //                     </ul>
@@ -86,10 +86,10 @@
 //           <div className="flex items-center gap-4">
 //             <div className="sm:flex sm:gap-4 group">
 //               <Link
-//                 className="rounded-md group-hover:bg-white group-hover:border-teal-600 border-2 bg-teal-600 flex items-center justify-center gap-2 h-12 w-12 text-sm font-medium text-white shadow"
+//                 className="rounded-md group-hover:bg-white group-hover:border-lightbrown-0 border-2 bg-lightbrown-0 flex items-center justify-center gap-2 h-12 w-12 text-sm font-medium text-white shadow"
 //                 href="/"
 //               >
-//                 <FaShoppingCart className="group-hover:text-teal-600" />
+//                 <FaShoppingCart className="group-hover:text-lightbrown-0" />
 //               </Link>
 //             </div>
 
