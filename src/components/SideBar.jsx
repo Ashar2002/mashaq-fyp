@@ -2,7 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { FaBars, FaShoppingCart } from "react-icons/fa";
 import Image from "next/image";
-import { logo } from "@/assets";
+import { logo, main_logo } from "@/assets";
 // import { logo } from "@/assets";
 
 const Sidebar = () => {
@@ -15,7 +15,7 @@ const Sidebar = () => {
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="max-w-[200px] w-full ">
           <Link href="/">
-            <Image src={logo} width={220} height={220} alt="logo" />
+            <Image src={main_logo} width={220} height={220} alt="logo" />
           </Link>
         </div>
         <div className="max-w-[130px] flex items-center justify-between w-full gap-5">
@@ -45,7 +45,7 @@ const Sidebar = () => {
               ❌
             </span>
             <Link href="/">
-              <Image src={logo} width={220} height={220} alt="logo" />
+              <Image src={main_logo} width={220} height={220} alt="logo" />
             </Link>
 
             <div className="px-4 py-6">

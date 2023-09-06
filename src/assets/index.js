@@ -1,4 +1,4 @@
-import logo from "../assets/images/header_logo.png"
+import main_logo from "../assets/images/mash_logo.png"
 import shirt1 from "../assets/images/shirt1.jpg"
 import shirt2 from "../assets/images/shirt2.jpg"
 import shirt3 from "../assets/images/shirt3.jpg"
@@ -7,7 +7,7 @@ import gitIcon1 from "../assets/images/git_icon.svg"
 import gitIcon2 from "../assets/images/git_icon2.svg"
 
 export{
-    logo,
+    main_logo,
     shirt1,
     shirt2,
     shirt3,
