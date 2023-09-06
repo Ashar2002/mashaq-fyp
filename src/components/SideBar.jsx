@@ -12,10 +12,10 @@ const Sidebar = () => {
   };
   return (
     <div className="bg-white w-full relative z-0">
-      <div className="container mx-auto flex justify-between items-center px-4">
+      <div className="container mx-auto flex justify-between py-2 items-center px-4">
         <div className="max-w-[200px] w-full ">
           <Link href="/">
-            <Image src={main_logo} width={220} height={220} alt="logo" />
+            <Image src={main_logo} width={160} height={160} alt="logo" />
           </Link>
         </div>
         <div className="max-w-[130px] flex items-center justify-between w-full gap-5">
