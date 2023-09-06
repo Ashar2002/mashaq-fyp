@@ -7,7 +7,7 @@ const BestSelling = () => {
   return (
     <div className="container mx-auto py-16">
       <h1 className="text-4xl font-bold text-center">Best Selling Products</h1>
-      <div className="flex mt-8 justify-between items-start">
+      <div className="flex mt-8 gap-x-2 gap-y-4 mx-1 lg:flex-nowrap flex-wrap lg:justify-between justify-center items-start">
         <Link
           href="/product-details"
           className="flex flex-col items-center border border-brown-0 rounded-lg pt-3"

@@ -6,6 +6,9 @@ const Recommendations = () => {
   return (
     <section>
       <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
+        <h2 className="uppercase lg:text-4xl md:text-3xl text-2xl text-brown-0 text-center font-bold">
+          recommendations
+        </h2>
         <ul className="grid gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-4">
           <li className="border border-brown-0 rounded-lg">
             <a href="/product-details" className="block overflow-hidden group">
