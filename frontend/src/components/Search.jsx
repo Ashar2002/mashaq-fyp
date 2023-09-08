@@ -3,14 +3,14 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div>
+    <>
       <div>
         <form class="py-10">
           <div class="md:flex-row flex max-w-[900px] px-4 w-full mx-auto">
             <div class="inline-flex flex-auto">
               <button
                 type="submit"
-                class="py-2.5 px-3.5 text-sm rounded-t-md md:rounded-tr-none md:rounded-l-md font-medium leading-snug tracking-wider uppercase text-gray-900 bg-lightbrown-0 transition hover:bg-bisque-0 active:bg-bisque-0 on:bg-gray-200"
+                class="py-2.5 px-3.5 text-sm rounded-t-md md:rounded-tr-none md:rounded-l-md font-medium leading-snug tracking-wider uppercase text-gray-900 bg-brown-0 transition hover:bg-bisque-0 active:bg-bisque-0 on:bg-gray-200"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,14 +39,15 @@ const Search = () => {
 
             <button
               type="submit"
-              class="xt-button py-2.5 px-3.5 text-sm rounded-b-md md:rounded-bl-none md:rounded-r-md font-medium leading-snug tracking-wider uppercase text-white transition hover:bg-blue-600 bg-lightbrown-0"
+              class="xt-button py-2.5 px-3.5 text-sm rounded-b-md md:rounded-bl-none md:rounded-r-md font-medium leading-snug tracking-wider uppercase text-white transition hover:bg-blue-600 bg-brown-0"
             >
               Search
             </button>
           </div>
         </form>
+        
       </div>
-    </div>
+    </>
   );
 };
 

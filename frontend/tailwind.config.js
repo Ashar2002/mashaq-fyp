@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       colors:{
         bisque : ["#ffe4c4"],
-        brown : ["#231709"],
+        brown : ["#553b18"],
         lightbrown : ["#795c34"],
       },
 

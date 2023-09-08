@@ -1,17 +1,38 @@
+import { bannerside1, bannerside2 } from "@/assets";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Banner = () => {
   return (
-    <div className="banner bg-cover bg-center bg-no-repeat h-[70vh] ">
-      <div className="container mx-auto px-4 py-16 flex flex-col gap-5 items-center h-full justify-center">
-        <h1 className="uppercase lg:text-6xl sm:text-4xl text-white text-3xl font-bold text-center">
-          Welcome to <span className="text-lightbrown-0">My Shop</span>
-        </h1>
-        <button className="bg-lightbrown-0 hover:bg-white font-medium hover:scale-105 hover:text-lightbrown-0 ease-in-out delay-100 transition-all text-white px-10 py-3 mt-5 rounded-md w-fit mx-auto capitalize outline-none">
-          get started
-        </button>
+    <div className="banner relative bg-cover bg-center bg-no-repeat h-[80vh] ">
+      <div className="container mx-auto px-4 py-16 flex flex-col gap-5 items-start h-full justify-center">
+        <div className="max-w-[500px] lg:mr-auto lg:mx-0 mx-auto">
+          <p className="text-brown-0 text-center uppercase tracking-wider font-bold">
+            Go forth and be fabulous!
+          </p>
+          <h1 className="uppercase tracking-widest lg:text-8xl sm:text-7xl text-6xl text-brown-0 text-3xl font-bold text-center">
+            Mashaq
+          </h1>
+          <p className="text-2xl bg-bisque-0 p-2 rounded-full w-fit mx-auto mt-4 uppercase font-normal tracking-widest">
+            fashion clothing
+          </p>
+        </div>
       </div>
+      <Image
+        className="absolute lg:block hidden top-10 rotate-[342deg] right-[10%] border-8 border-white"
+        src={bannerside1}
+        width={300}
+        height={300}
+        alt="bannerside1"
+      />
+      <Image
+        className="absolute lg:block hidden bottom-10 rotate-[20deg] right-[10%] border-8 border-white"
+        src={bannerside2}
+        width={300}
+        height={300}
+        alt="bannerside1"
+      />
     </div>
   );
 };

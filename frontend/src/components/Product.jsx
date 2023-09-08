@@ -23,7 +23,7 @@ const Product = () => {
       <div className="container mx-auto flex justify-evenly gap-4 px-2 lg:flex-nowrap flex-wrap items-center py-16">
         <div className="max-w-[600px] mx-auto w-full">
           <Image
-            className="p-2 border border-lightbrown-0 w-full rounded-xl"
+            className="p-2 border border-brown-0 w-full rounded-xl"
             src={shirt1}
             alt="shirt"
             width={600}
@@ -49,7 +49,7 @@ const Product = () => {
           <div className="flex items-center flex-wrap justify-left gap-5">
             <div className="quantity-container py-1 w-full bg-bisque-0 rounded-lg flex items-center justify-between px-6 lg:px-3 font-bold sm:mr-3 lg:mr-5 max-w-[200px]">
               <button
-                className="text-lightborder-lightbrown-0 text-2xl leading-none font-bold mb-1 lg:mb-2 lg:text-3xl hover:opacity-60"
+                className="text-lightborder-brown-0 text-2xl leading-none font-bold mb-1 lg:mb-2 lg:text-3xl hover:opacity-60"
                 onClick={handleDecrease}
               >
                 -
@@ -65,16 +65,16 @@ const Product = () => {
                 readOnly
               />
               <button
-                className="text-lightborder-lightbrown-0 text-2xl leading-none font-bold mb-1 lg:mb-2 lg:text-3xl hover:opacity-60"
+                className="text-lightborder-brown-0 text-2xl leading-none font-bold mb-1 lg:mb-2 lg:text-3xl hover:opacity-60"
                 onClick={handleIncrease}
               >
                 +
               </button>
             </div>
 
-            <button className="bg-white hover:text-white px-4 py-2 rounded-md flex items-center gap-4 group hover:bg-lightbrown-0 border-2 border-lightbrown-0 hover:border-lightbrown-0">
-              <FaShoppingCart className="group-hover:text-bisque-0 text-2xl cursor-pointer text-lightbrown-0" />
-              <span className="group-hover:text-bisque-0 text-lightbrown-0 font-medium">Add to Cart</span>
+            <button className="bg-white hover:text-white px-4 py-2 rounded-md flex items-center gap-4 group hover:bg-brown-0 border-2 border-brown-0 hover:border-brown-0">
+              <FaShoppingCart className="group-hover:text-bisque-0 text-2xl cursor-pointer text-brown-0" />
+              <span className="group-hover:text-bisque-0 text-brown-0 font-medium">Add to Cart</span>
             </button>
           </div>
         </div>

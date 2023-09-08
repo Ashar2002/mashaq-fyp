@@ -17,7 +17,7 @@ const categories = () => {
           <div className="grid place-items-center h-full place-content-center w-full xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-16 justify-between items-start gap-2">
             <Link
               href="/product-details"
-              className="border border-lightbrown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
+              className="border border-brown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
             >
               <Image
                 src={shirt1}
@@ -33,7 +33,7 @@ const categories = () => {
             </Link>
             <Link
               href="/product-details"
-              className="border border-lightbrown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
+              className="border border-brown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
             >
               <Image
                 src={shirt4}
@@ -49,7 +49,7 @@ const categories = () => {
             </Link>
             <Link
               href="/product-details"
-              className="border border-lightbrown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
+              className="border border-brown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
             >
               <Image
                 src={shirt1}
@@ -65,7 +65,7 @@ const categories = () => {
             </Link>
             <Link
               href="/product-details"
-              className="border border-lightbrown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
+              className="border border-brown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
             >
               <Image
                 src={shirt4}
@@ -81,7 +81,7 @@ const categories = () => {
             </Link>
             <Link
               href="/product-details"
-              className="border border-lightbrown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
+              className="border border-brown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
             >
               <Image
                 src={shirt1}
@@ -97,7 +97,7 @@ const categories = () => {
             </Link>
             <Link
               href="/product-details"
-              className="border border-lightbrown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
+              className="border border-brown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
             >
               <Image
                 src={shirt4}
@@ -113,7 +113,7 @@ const categories = () => {
             </Link>
             <Link
               href="/product-details"
-              className="border border-lightbrown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
+              className="border border-brown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
             >
               <Image
                 src={shirt1}
@@ -129,7 +129,7 @@ const categories = () => {
             </Link>
             <Link
               href="/product-details"
-              className="border border-lightbrown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
+              className="border border-brown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
             >
               <Image
                 src={shirt4}
@@ -145,7 +145,7 @@ const categories = () => {
             </Link>
             <Link
               href="/product-details"
-              className="border border-lightbrown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
+              className="border border-brown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
             >
               <Image
                 src={shirt1}
@@ -161,7 +161,7 @@ const categories = () => {
             </Link>
             <Link
               href="/product-details"
-              className="border border-lightbrown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
+              className="border border-brown-0 rounded-lg pt-3 my-2 mb-3 gap-3"
             >
               <Image
                 src={shirt4}

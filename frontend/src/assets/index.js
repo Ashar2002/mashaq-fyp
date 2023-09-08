@@ -5,8 +5,12 @@ import shirt3 from "../assets/images/shirt3.jpg"
 import shirt4 from "../assets/images/shirt4.jpg"
 import gitIcon1 from "../assets/images/git_icon.svg"
 import gitIcon2 from "../assets/images/git_icon2.svg"
+import bannerside1 from "../assets/images/bannerside1.jpg"
+import bannerside2 from "../assets/images/bannerside2.jpg"
 
 export{
+    bannerside1,
+    bannerside2,
     main_logo,
     shirt1,
     shirt2,
