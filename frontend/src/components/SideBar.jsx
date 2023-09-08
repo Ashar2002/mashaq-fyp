@@ -45,7 +45,7 @@ const Sidebar = () => {
               ❌
             </span>
             <Link href="/">
-              <Image src={main_logo} width={220} height={220} alt="logo" />
+              <Image className="mx-auto" src={main_logo} width={150} height={150} alt="logo" />
             </Link>
 
             <div className="px-4 py-6">
