@@ -9,11 +9,11 @@ const Footer = () => {
       <div className="px-4 container mx-auto max-w-[80%]">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
           <div>
-            <div className="flex justify-center bg-bisque-0 py-2 px-10 rounded-full w-fit lg:justify-start">
+            <div className="flex justify-center bg-bisque-0 py-2 px-10 rounded-full w-fit mx-auto lg:mx-0 text-center lg:justify-start">
               <Image src={main_logo} alt="main_logo" width={140} height={140} />
             </div>
 
-            <p className="mt-6 text-center leading-relaxed text-gray-500 dark:text-gray-400 xl:max-w-xs lg:text-left">
+            <p className="mt-6 text-center leading-relaxed text-white xl:max-w-xs lg:text-left">
               Our journey began with a vision to revolutionize the way people
               shop online, making it more personalized, enjoyable, and
               effortless. Today, we're proud to say that we've turned that
@@ -113,34 +113,25 @@ const Footer = () => {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2 place-items-center">
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900 dark:text-white">
+              <p className="text-xl font-medium text-bisque-0">
                 Mens
               </p>
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                    href="/"
-                  >
+                  <a className=" transition text-bisque-0" href="/">
                     Top Wear
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                    href="/"
-                  >
+                  <a className=" transition text-bisque-0" href="/">
                     Bottom Wear
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                    href="/"
-                  >
+                  <a className=" transition text-bisque-0" href="/">
                     Foot Wear
                   </a>
                 </li>
@@ -148,42 +139,30 @@ const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900 dark:text-white">
+              <p className="text-xl font-medium text-bisque-0">
                 Womens
               </p>
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                    href="/"
-                  >
+                  <a className=" transition text-bisque-0" href="/">
                     Top Wear
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                    href="/"
-                  >
+                  <a className=" transition text-bisque-0" href="/">
                     Bottom Wear
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                    href="/"
-                  >
+                  <a className=" transition text-bisque-0" href="/">
                     Foot Wear
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                    href="/"
-                  >
+                  <a className=" transition text-bisque-0" href="/">
                     Bags
                   </a>
                 </li>
@@ -191,7 +170,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900 dark:text-white">
+              <p className="text-xl font-medium text-bisque-0">
                 Quick Links
               </p>
 
@@ -203,7 +182,7 @@ const Footer = () => {
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 shrink-0 text-gray-900 dark:text-white"
+                      className="h-5 w-5 shrink-0 text-bisque-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -216,7 +195,7 @@ const Footer = () => {
                       />
                     </svg>
 
-                    <span className="sm:flex-1 text-gray-700 dark:text-gray-300">
+                    <span className="sm:flex-1  dark:text-gray-300">
                       asharrashid18@gmail.com
                     </span>
                   </a>
@@ -229,7 +208,7 @@ const Footer = () => {
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 shrink-0 text-gray-900 dark:text-white"
+                      className="h-5 w-5 shrink-0 text-bisque-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -242,7 +221,7 @@ const Footer = () => {
                       />
                     </svg>
 
-                    <span className="sm:flex-1 text-gray-700 dark:text-gray-300">
+                    <span className="sm:flex-1  dark:text-gray-300">
                       0123456789
                     </span>
                   </a>
@@ -251,7 +230,7 @@ const Footer = () => {
                 <li className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 shrink-0 text-gray-900 dark:text-white"
+                    className="h-5 w-5 shrink-0 text-bisque-0"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -269,35 +248,26 @@ const Footer = () => {
                     />
                   </svg>
 
-                  <address className="-mt-0.5 sm:flex-1 not-italic text-gray-700 dark:text-gray-300">
+                  <address className="-mt-0.5 sm:flex-1 not-italic  dark:text-gray-300">
                     Bahria university
                   </address>
                 </li>
               </ul> */}
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                    href="/"
-                  >
+                  <a className=" transition text-bisque-0" href="/">
                     About Us
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                    href="/"
-                  >
+                  <a className=" transition text-bisque-0" href="/">
                     Contact Us
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                    href="/"
-                  >
+                  <a className=" transition text-bisque-0" href="/">
                     Shop
                   </a>
                 </li>
