@@ -11,7 +11,9 @@ const Footer = () => {
           <div>
             <div className="flex justify-center rounded-full w-fit mx-auto lg:mx-0 text-center lg:justify-start">
               {/* <Image src={main_logo} alt="main_logo" width={140} height={140} /> */}
-              <p className="text-4xl font-nunito text-white font-bold tracking-widest">MASHAQ</p>
+              <p className="text-4xl font-nunito text-white font-bold tracking-widest">
+                MASHAQ
+              </p>
             </div>
 
             <p className="mt-6 text-center leading-relaxed text-white xl:max-w-xs lg:text-left">
@@ -112,11 +114,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2 place-items-start">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2 sm:place-items-start">
             <div className="text-center sm:text-left">
-              <p className="text-xl font-medium text-bisque-0">
-                Mens
-              </p>
+              <p className="text-xl font-medium text-bisque-0">Mens</p>
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
@@ -140,9 +140,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-xl font-medium text-bisque-0">
-                Womens
-              </p>
+              <p className="text-xl font-medium text-bisque-0">Womens</p>
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
@@ -171,9 +169,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-xl font-medium text-bisque-0">
-                Quick Links
-              </p>
+              <p className="text-xl font-medium text-bisque-0">Quick Links</p>
 
               {/* <ul className="mt-8 space-y-4 text-sm">
                 <li>
