@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="px-4 container mx-auto max-w-[80%]">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
           <div>
-            <div className="flex justify-center text-teal-600 dark:text-teal-300 lg:justify-start">
+            <div className="flex justify-center bg-bisque-0 py-2 px-10 rounded-full w-fit lg:justify-start">
               <Image src={main_logo} alt="main_logo" width={140} height={140} />
             </div>
 
@@ -177,6 +177,14 @@ const Footer = () => {
                     href="/"
                   >
                     Foot Wear
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                    href="/"
+                  >
+                    Bags
                   </a>
                 </li>
               </ul>
