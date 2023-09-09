@@ -6,21 +6,21 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="bg-[#271c0d] py-16">
-      <div className="px-4 container mx-auto">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div className="px-4 container mx-auto max-w-[80%]">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
           <div>
-            <div className="flex justify-center text-teal-600 dark:text-teal-300 sm:justify-start">
+            <div className="flex justify-center text-teal-600 dark:text-teal-300 lg:justify-start">
               <Image src={main_logo} alt="main_logo" width={140} height={140} />
             </div>
 
-            <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400 sm:max-w-xs sm:text-left">
+            <p className="mt-6 text-center leading-relaxed text-gray-500 dark:text-gray-400 xl:max-w-xs lg:text-left">
               Our journey began with a vision to revolutionize the way people
               shop online, making it more personalized, enjoyable, and
               effortless. Today, we're proud to say that we've turned that
               vision into reality.
             </p>
 
-            <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+            <ul className="mt-8 flex justify-center gap-6 lg:justify-start md:gap-8">
               <li>
                 <a
                   href="/"
@@ -108,11 +108,10 @@ const Footer = () => {
                   </svg>
                 </a>
               </li>
-
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2 place-items-center">
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-gray-900 dark:text-white">
                 Mens
@@ -150,7 +149,7 @@ const Footer = () => {
 
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-gray-900 dark:text-white">
-                Our Services
+                Womens
               </p>
 
               <ul className="mt-8 space-y-4 text-sm">
@@ -185,10 +184,10 @@ const Footer = () => {
 
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-gray-900 dark:text-white">
-                Contact Us
+                Quick Links
               </p>
 
-              <ul className="mt-8 space-y-4 text-sm">
+              {/* <ul className="mt-8 space-y-4 text-sm">
                 <li>
                   <a
                     className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
@@ -266,6 +265,34 @@ const Footer = () => {
                     Bahria university
                   </address>
                 </li>
+              </ul> */}
+              <ul className="mt-8 space-y-4 text-sm">
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                    href="/"
+                  >
+                    About Us
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                    href="/"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                    href="/"
+                  >
+                    Shop
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -273,7 +300,6 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-gray-100 pt-6 dark:border-gray-800">
           <div className="text-center">
-
             <p className="mt-4 text-sm text-bisque-0  sm:order-first sm:mt-0">
               &copy; 2023 Mashaq Team
             </p>
