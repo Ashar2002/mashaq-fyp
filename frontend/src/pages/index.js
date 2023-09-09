@@ -14,6 +14,7 @@ export default function Home() {
       <div className="">
         <Banner />
       </div>
+      {/* client men jake wahan add krdena  */}
       <Search />
       <ImageUpload />
       <BestSelling />

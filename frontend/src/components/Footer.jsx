@@ -5,7 +5,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-brown-0 py-16">
+    <div className="bg-[#271c0d] py-16">
       <div className="max-w-[420px] mx-auto px-4">
         <ul className="flex justify-between text-white">
           <li>Home</li>

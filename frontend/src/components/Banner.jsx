@@ -1,6 +1,5 @@
 import { bannerside1, bannerside2 } from "@/assets";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const Banner = () => {
@@ -11,7 +10,7 @@ const Banner = () => {
           <p className="text-brown-0 text-center uppercase tracking-wider font-bold">
             Go forth and be fabulous!
           </p>
-          <h1 className="uppercase tracking-widest lg:text-8xl sm:text-7xl text-6xl text-brown-0 text-3xl font-bold text-center">
+          <h1 className="uppercase tracking-widest lg:text-8xl sm:text-7xl text-6xl text-brown-0 font-bold text-center">
             Mashaq
           </h1>
           <p className="text-2xl bg-bisque-0 p-2 rounded-full w-fit mx-auto mt-4 uppercase font-normal tracking-widest">
