@@ -4,21 +4,48 @@ import Search from "@/components/Search";
 import BestSelling from "@/components/BestSelling";
 import ImageUpload from "@/components/ImageUpload";
 import Footer from "@/components/Footer";
+import imageUrlBuilder from '@sanity/image-url'
+import { createClient } from "@sanity/client";
 
-export default function Home() {
+export default function Home({ products }) {
   return (
     <div className="relative">
       <Sidebar />
-      {/* <Header /> */}
-
       <div className="">
         <Banner />
       </div>
-      {/* client men jake wahan add krdena  */}
       <Search />
       <ImageUpload />
-      <BestSelling />
+      <BestSelling products={products} />
       <Footer />
     </div>
   );
+}
+
+export async function getServerSideProps(context) {
+  const client = createClient({
+    projectId: "q5r6hvs1",
+    dataset: "production",
+    useCdn: false,
+    apiVersion: "2023-08-22",
+  });
+  const query = `*[_type == "product"]`;
+  const products = await client.fetch(query);
+
+  return {
+    props: {
+      products,
+    },
+  };
+}
+
+export function urlFor(source) {
+  const client = createClient({
+    projectId: "q5r6hvs1",
+    dataset: "production",
+    useCdn: false,
+    apiVersion: "2023-09-05",
+  });
+  const builder = imageUrlBuilder(client);
+  return builder.image(source);
 }

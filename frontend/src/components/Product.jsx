@@ -3,11 +3,20 @@ import Image from "next/image";
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { useState } from "react";
-import Recommendations from "./Recommendations";
+import { urlFor } from "@/pages";
 
-const Product = () => {
+const Product = ({ products, mainCategory,subCategory }) => {
+  console.log(products, "checking");
+
+  const filteredCategory = mainCategory.filter((item) => {
+    return item._id === products[0]?.mainCategory?._ref;
+  });
+  const filteredSubCategory = subCategory.filter((item) => {
+    return item._id === products[0]?.subCategory?._ref;
+  });
+  console.log(filteredSubCategory[0]?.title, "checking filteredSubCategory");
+
   const [quantity, setQuantity] = useState(0);
-
   const handleDecrease = () => {
     if (quantity > 0) {
       setQuantity(quantity - 1);
@@ -24,7 +33,8 @@ const Product = () => {
         <div className="max-w-[600px] mx-auto w-full">
           <Image
             className="p-2 border border-brown-0 w-full rounded-xl"
-            src={shirt1}
+            // src={shirt1}
+            src={urlFor(products[0].image).url([])}
             alt="shirt"
             width={600}
             height={600}
@@ -32,17 +42,14 @@ const Product = () => {
         </div>
         <div className="max-w-[700px] w-full p-2 rounded-xl">
           <h1 className="py-1 text-base font-bold uppercase text-brown-0">
-            Men's Shirt
+            {filteredCategory[0]?.title} ,
+            <span className="pl-3">{filteredSubCategory[0]?.title}</span>
           </h1>
-          <h1 className="py-4 text-4xl font-bold">Tiger Print Shirt</h1>
-          <p className="py-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras leo
-            ex, pretium nec lacus id, pretium pretium justo. Fusce mattis, massa
-            interdum rhoncus congue, mauris massa ornare risus, id placerat
-            metus nibh vitae lectus. In luctus non diam eu semper. Nunc feugiat
-            risus malesuada velit tristique facilisis. Nunc et efficitur enim.
-            Sed at
-          </p>
+          <h1 className="py-4 text-4xl font-bold capitalize">
+            {" "}
+            {products[0]?.title}
+          </h1>
+          <p className="py-2">{products[0]?.description}</p>
 
           <p className="text-2xl py-2 font-bold">$50</p>
 
@@ -74,12 +81,13 @@ const Product = () => {
 
             <button className="bg-white hover:text-white px-4 py-2 rounded-md flex items-center gap-4 group hover:bg-brown-0 border-2 border-brown-0 hover:border-brown-0">
               <FaShoppingCart className="group-hover:text-bisque-0 text-2xl cursor-pointer text-brown-0" />
-              <span className="group-hover:text-bisque-0 text-brown-0 font-medium">Add to Cart</span>
+              <span className="group-hover:text-bisque-0 text-brown-0 font-medium">
+                Add to Cart
+              </span>
             </button>
           </div>
         </div>
       </div>
-      <Recommendations />
     </>
   );
 };

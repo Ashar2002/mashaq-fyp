@@ -5,13 +5,14 @@ import Image from "next/image";
 import { logo, main_logo } from "@/assets";
 // import { logo } from "@/assets";
 
-const Sidebar = () => {
+const Sidebar = ({bg}) => {
   const [open, setOpen] = useState(false);
   const toggleSidebar = () => {
     setOpen(!open);
   };
   return (
-    <div className="bg-white w-full relative z-50">
+    // <div className="bg-white w-full relative z-50">
+    <div className={`${bg} w-full relative z-50`}>
       <div className="container mx-auto flex justify-between py-2 items-center px-4">
         <div className="max-w-[200px] w-full ">
           <Link href="/">
