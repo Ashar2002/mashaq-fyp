@@ -37,6 +37,12 @@ export default {
         type: 'text',
         validation: (Rule) => Rule.required(),
       },
+      {
+        name: 'price',
+        title: 'Product Price',
+        type: 'number',
+        // validation: (Rule) => Rule.required(),
+      },
     ],
   };
   
