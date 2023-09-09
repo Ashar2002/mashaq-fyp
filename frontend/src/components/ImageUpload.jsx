@@ -16,7 +16,7 @@ const ImageUpload = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mb-10">
       <div className="max-w-[900px] mx-auto mt-7 px-4">
         <div class="flex items-center justify-center w-full">
           <label
