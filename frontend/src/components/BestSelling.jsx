@@ -2,7 +2,6 @@ import { shirt1 } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { client } from "../../client";
 
 const BestSelling = () => {
   const arra = [1, 2, 3, 4, 5];
@@ -29,14 +28,3 @@ const BestSelling = () => {
 };
 
 export default BestSelling;
-
-// export const getServerSideProps = async () => {
-//   const query = `*[_type == "product"]`;
-//   const products = await client.fetch(query);
-
-//   return {
-//     props: {
-//       products,
-//     },
-//   };
-// };
