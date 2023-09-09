@@ -112,7 +112,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2 place-items-center">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2 place-items-start">
             <div className="text-center sm:text-left">
               <p className="text-xl font-medium text-bisque-0">
                 Mens
