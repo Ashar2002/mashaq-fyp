@@ -5,16 +5,13 @@ import { FaShoppingCart } from "react-icons/fa";
 import { useState } from "react";
 import { urlFor } from "@/pages";
 
-const Product = ({ products, mainCategory,subCategory }) => {
-  console.log(products, "checking");
-
-  const filteredCategory = mainCategory.filter((item) => {
+const Product = ({ products, mainCategory, subCategory }) => {
+  const filteredCategory = mainCategory?.filter((item) => {
     return item._id === products[0]?.mainCategory?._ref;
   });
-  const filteredSubCategory = subCategory.filter((item) => {
+    const filteredSubCategory = subCategory.filter((item) => {
     return item._id === products[0]?.subCategory?._ref;
   });
-  console.log(filteredSubCategory[0]?.title, "checking filteredSubCategory");
 
   const [quantity, setQuantity] = useState(0);
   const handleDecrease = () => {

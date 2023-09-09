@@ -10,10 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ["var(--font-poppins)"],
-        nunito: ["var(--font-Nunito)"],
-      },
+      // fontFamily: {
+      //   poppins: ["var(--font-poppins)"],
+      //   nunito: ["var(--font-Nunito)"],
+      // },
 
       colors: {
         bisque: ["#ffe4c4"],

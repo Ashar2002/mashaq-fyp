@@ -1,4 +1,6 @@
+import Footer from '@/components/Footer';
 import ProductList from '@/components/ProductList';
+import Sidebar from '@/components/SideBar';
 import { createClient } from '@sanity/client';
 import { imageUrlBuilder } from '@sanity/image-url';
 import React from 'react'
@@ -6,7 +8,9 @@ import React from 'react'
 const topwear = ({products}) => {
   return (
     <div>
+      <Sidebar bg="bg-bisque-0" />
       <ProductList products={products} />
+      <Footer />
     </div>
   )
 }

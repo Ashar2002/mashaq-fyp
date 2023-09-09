@@ -17,7 +17,7 @@ const InnerProduct = ({bg, products, mainCategory,subCategory }) => {
     <div>
       <Sidebar bg="bg-bisque-0" />
       <Product products={filteredProduct} mainCategory={mainCategory} subCategory={subCategory} />
-      <Recommendations />
+      <Recommendations products={products} />
       <Footer />
     </div>
   );

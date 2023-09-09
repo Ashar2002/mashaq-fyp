@@ -7,7 +7,7 @@ const ProductList = ({ products }) => {
   return (
     <div>
       <div className="container mx-auto">
-        <div className="grid place-items-center h-full place-content-center w-full xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-16 justify-between items-start gap-2">
+        <div className="grid place-items-center h-full place-content-center w-full 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-16 justify-between items-start gap-2">
           {products?.map((item, index) => (
             <Link
               href={`/product/${item._id}`}

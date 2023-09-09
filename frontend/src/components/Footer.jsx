@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <div className="flex justify-center rounded-full w-fit mx-auto lg:mx-0 text-center lg:justify-start">
               {/* <Image src={main_logo} alt="main_logo" width={140} height={140} /> */}
-              <p className="text-4xl font-nunito text-white font-bold tracking-widest">
+              <p className="text-4xl  text-white font-bold tracking-widest">
                 MASHAQ
               </p>
             </div>
