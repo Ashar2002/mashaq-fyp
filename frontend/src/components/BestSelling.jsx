@@ -1,10 +1,23 @@
 import { shirt1 } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+// import { client } from "../../client";
 
 const BestSelling = () => {
   const arra = [1, 2, 3, 4, 5];
+
+  // const getData = async () => {
+  //   const query = `*[_type == "product"]`;
+  //   const products = await client.fetch(query);
+
+  //   console.log(products);
+  // };
+
+  // useEffect(() => {
+  //   const res = getData();
+  //   console.log(res, "res......");
+  // }, []);
 
   return (
     <div className="container mx-auto py-16">

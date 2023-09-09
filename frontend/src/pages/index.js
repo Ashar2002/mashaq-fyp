@@ -16,8 +16,8 @@ export default function Home() {
       </div>
       {/* client men jake wahan add krdena  */}
       <Search />
-      <ImageUpload />
       <BestSelling />
+      <ImageUpload />
       <Footer />
     </>
   );
