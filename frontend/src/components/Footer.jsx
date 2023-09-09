@@ -9,8 +9,9 @@ const Footer = () => {
       <div className="px-4 container mx-auto max-w-[80%]">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
           <div>
-            <div className="flex justify-center bg-bisque-0 py-2 px-10 rounded-full w-fit mx-auto lg:mx-0 text-center lg:justify-start">
-              <Image src={main_logo} alt="main_logo" width={140} height={140} />
+            <div className="flex justify-center rounded-full w-fit mx-auto lg:mx-0 text-center lg:justify-start">
+              {/* <Image src={main_logo} alt="main_logo" width={140} height={140} /> */}
+              <p className="text-4xl font-nunito text-white font-bold tracking-widest">MASHAQ</p>
             </div>
 
             <p className="mt-6 text-center leading-relaxed text-white xl:max-w-xs lg:text-left">
@@ -276,7 +277,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-gray-100 pt-6 dark:border-gray-800">
+        <div className="mt-12 border-t border-gray-100 pt-6">
           <div className="text-center">
             <p className="mt-4 text-sm text-bisque-0  sm:order-first sm:mt-0">
               &copy; 2023 Mashaq Team
