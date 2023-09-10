@@ -183,6 +183,14 @@ const Sidebar = ({ bg }) => {
                     About Us
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/contact-us"
+                    className="text-sm font-medium px-4 py-2 hover:bg-bisque-0 hover:text-brown-0 block rounded-lg"
+                  >
+                    Contact Us
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
