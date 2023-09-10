@@ -9,7 +9,6 @@ import { createClient } from "@sanity/client";
 import ChatBot from "@/components/ChatBot";
 
 export default function Home({ products }) {
-  
   return (
     <div className="relative">
       <Sidebar />
@@ -17,7 +16,7 @@ export default function Home({ products }) {
         <Banner />
       </div>
       <ChatBot />
-      <Search />
+      <Search products={products}/>
       <ImageUpload />
       <BestSelling products={products} />
       <Footer />
