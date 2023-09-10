@@ -5,7 +5,7 @@ import Image from "next/image";
 import { logo, main_logo } from "@/assets";
 // import { logo } from "@/assets";
 
-const Sidebar = ({bg}) => {
+const Sidebar = ({ bg }) => {
   const [open, setOpen] = useState(false);
   const toggleSidebar = () => {
     setOpen(!open);
@@ -46,7 +46,13 @@ const Sidebar = ({bg}) => {
               ❌
             </span>
             <Link href="/">
-              <Image className="mx-auto" src={main_logo} width={150} height={150} alt="logo" />
+              <Image
+                className="mx-auto"
+                src={main_logo}
+                width={150}
+                height={150}
+                alt="logo"
+              />
             </Link>
 
             <div className="px-4 py-6">
@@ -54,9 +60,10 @@ const Sidebar = ({bg}) => {
                 <li>
                   <details className="group [&_summary::-webkit-details-marker]:hidden">
                     <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-black hover:bg-bisque-0 hover:text-brown-0">
-                      <p 
-                      // href="/categories" 
-                      className="text-sm font-medium">
+                      <p
+                        // href="/categories"
+                        className="text-sm font-medium"
+                      >
                         {" "}
                         Men's{" "}
                       </p>
@@ -167,6 +174,14 @@ const Sidebar = ({bg}) => {
                       </li>
                     </ul>
                   </details>
+                </li>
+                <li>
+                  <Link
+                    href="/about-us"
+                    className="text-sm font-medium px-4 py-2 hover:bg-bisque-0 hover:text-brown-0 block rounded-lg"
+                  >
+                    About Us
+                  </Link>
                 </li>
               </ul>
             </div>
