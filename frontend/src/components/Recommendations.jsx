@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Recommendations = ({products}) => {
+const Recommendations = ({ products }) => {
   const top4Products = products.slice(0, 4);
 
   return (
@@ -17,7 +17,7 @@ const Recommendations = ({products}) => {
           {top4Products?.map((item, index) => (
             <Link
               href={`/product/${item._id}`}
-              className="flex flex-col items-center border border-brown-0 rounded-lg pt-3"
+              className="flex flex-col items-center border border-brown-0 rounded-lg pt-3 max-w-[280px] w-full group"
             >
               <Image
                 // src={shirt1}
@@ -28,7 +28,7 @@ const Recommendations = ({products}) => {
                 height={300}
               />
               <div className="bg-bisque-0 w-full p-2 rounded-lg rounded-t-none">
-                <p className="text-gray-500 text-lg">{item.title}</p>
+                <p className="text-brown-0 text-lg min-h-[60px]">{item.title}</p>
                 <p className="text-black font-bold">${item.price}.00</p>
               </div>
             </Link>

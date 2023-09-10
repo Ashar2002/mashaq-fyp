@@ -11,18 +11,20 @@ const ProductList = ({ products }) => {
           {products?.map((item, index) => (
             <Link
               href={`/product/${item._id}`}
-              className="max-w-[280px] w-full flex flex-col items-center border border-brown-0 rounded-lg"
+              className="max-w-[280px] w-full flex flex-col items-center border border-brown-0 rounded-lg group"
             >
-              <Image
-                // src={shirt1}
-                src={urlFor(item.image).url()}
-                alt="shirt1"
-                width={300}
-                className="h-[300px] object-cover w-full max-w-[300px] rounded-t-lg"
-                height={300}
-              />
+              <div className="overflow-hidden w-full h-[300px] bg-bisque-0 rounded-t-lg">
+                <Image
+                  // src={shirt1}
+                  src={urlFor(item.image).url()}
+                  alt="shirt1"
+                  width={300}
+                  className="h-[300px] object-cover w-full max-w-[300px] rounded-t-lg group-hover:scale-125 delay-200 transition-all ease-in-out "
+                  height={300}
+                />
+              </div>
               <div className="bg-bisque-0 w-full p-2 rounded-lg rounded-t-none">
-                <p className="text-gray-500 text-lg min-h-[60px]">
+                <p className="text-brown-0 text-lg min-h-[60px]">
                   {item.title}
                 </p>
                 <p className="text-black font-bold">Rs. {item.price}.00</p>

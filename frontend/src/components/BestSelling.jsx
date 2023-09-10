@@ -28,7 +28,7 @@ const BestSelling = ({ products }) => {
               height={300}
             />
             <div className="bg-bisque-0 w-full p-2 rounded-lg rounded-t-none">
-              <p className="text-gray-500 text-lg min-h-[60px]">{item.title}</p>
+              <p className="text-brown-0 text-lg min-h-[60px]">{item.title}</p>
               <p className="text-black font-bold">Rs. {item.price}.00</p>
             </div>
           </Link>

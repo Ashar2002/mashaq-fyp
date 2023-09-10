@@ -10,8 +10,10 @@ import bannerside2 from "../assets/images/bannerside2.jpg"
 import men from "../assets/images/mens.png"
 import women from "../assets/images/women.png"
 import aboutPage from "../assets/images/aboutPage.png"
+import shopBanner from "../assets/images/shopBanner.jpeg"
 
 export{
+    shopBanner,
     aboutPage,
     men,
     women,
