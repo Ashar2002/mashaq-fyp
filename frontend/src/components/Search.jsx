@@ -78,7 +78,7 @@ const Search = ({ products }) => {
               <Link
                 key={item.id}
                 href={`/product/${item._id}`}
-                className="w-full flex items-center space-x-2 border border-red-500 gap-2 mb-2"
+                className="w-full flex items-center space-x-2 border border-lightbrown-0 gap-2 mb-2"
               >
                 <div className="w-full max-w-[120px] bg-bisque-0 text-center">
                   <Image
