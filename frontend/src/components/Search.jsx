@@ -73,16 +73,19 @@ const Search = ({ products }) => {
 
         {/* Dropdown to display results */}
         {results.length > 0 && (
-          <div className="bg-white border border-brown-0 mt-2 p-2 absolute left-0 w-full">
+          <div
+            className={`bg-white border border-brown-0 mt-2 p-2 absolute left-0 w-full ${
+              results.length > 2 ? "overflow-y-scroll h-[300px] search" : ""
+            }`}
+          >
             {results.map((item) => (
               <Link
                 key={item.id}
                 href={`/product/${item._id}`}
-                className="w-full flex items-center space-x-2 border border-lightbrown-0 gap-2 mb-2"
+                className="w-full flex items-center space-x-2 border border-red-500 gap-2 mb-2"
               >
                 <div className="w-full max-w-[120px] bg-bisque-0 text-center">
                   <Image
-                    // src={item.image}
                     src={urlFor(item.image).url()}
                     alt={item.title}
                     width={100}

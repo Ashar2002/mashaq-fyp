@@ -15,3 +15,17 @@
 .react-chatbot-kit-chat-input {
   outline: none;
 }
+::-webkit-scrollbar {
+  width: 20px;
+}
+.search::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #553b18;
+  border-radius: 4px;
+}
+.search::-webkit-scrollbar-thumb {
+  background: #553b18;
+  border-radius: 15px;
+}
