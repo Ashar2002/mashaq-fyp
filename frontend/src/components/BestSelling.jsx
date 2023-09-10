@@ -13,7 +13,7 @@ const BestSelling = ({ products }) => {
       <h1 className="text-4xl text-brown-0 font-bold text-center">
         Best Selling Products
       </h1>
-      <div className="flex mt-8 gap-x-2 gap-y-4 mx-1 lg:flex-nowrap flex-wrap lg:justify-between justify-center items-start  gap-x-3 gap-y-5">
+      <div className="flex mt-8 mx-1 lg:flex-nowrap flex-wrap lg:justify-between justify-center items-start  gap-x-3 gap-y-5">
         {top5Products?.map((item, index) => (
           <Link
             href={`/product/${item._id}`}
@@ -28,7 +28,7 @@ const BestSelling = ({ products }) => {
               height={300}
             />
             <div className="bg-bisque-0 w-full p-2 rounded-lg rounded-t-none">
-              <p className="text-gray-500 text-lg">{item.title}</p>
+              <p className="text-gray-500 text-lg min-h-[60px]">{item.title}</p>
               <p className="text-black font-bold">Rs. {item.price}.00</p>
             </div>
           </Link>
