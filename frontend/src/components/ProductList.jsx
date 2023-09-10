@@ -10,6 +10,8 @@ const ProductList = ({ products,title }) => {
         <h1 className="text-brown-0 text-4xl font-bold text-center mt-10">
           {title}
         </h1>
+        {products && products.length > 0 ? (
+
         <div className="grid place-items-center h-full place-content-center w-full 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-16 justify-between items-start gap-x-3 gap-y-5">
           {products?.map((item, index) => (
             <Link
@@ -35,6 +37,9 @@ const ProductList = ({ products,title }) => {
             </Link>
           ))}
         </div>
+        ) : (
+          <p className="my-16 text-red-500 text-xl capitalize text-center select-none">no products uploaded for this category yet. please check back later. thanks for your patience.</p>
+        )}
       </div>
     </>
   );
