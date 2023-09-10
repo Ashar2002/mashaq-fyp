@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import {  Poppins  , Nunito } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,7 +20,7 @@ export default function App({ Component, pageProps }) {
   return (
     <main className={`${poppins.variable} font-poppins ${nunito.variable} `}>
       <Component {...pageProps} />
-   
+      <Toaster />
     </main>
   );
 }

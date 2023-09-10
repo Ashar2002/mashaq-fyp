@@ -1,15 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // api call here
+    if (name && phone && email && message) {
+      sendEmail();
+    } else {
+      toast.error("please fill all the fields...");
+    }
+  };
+
+  const sendEmail = () => {
+    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+
+    // Build the email request data
+    const emailData = {
+      sender: { email: "asharrashid18@gmail.com" },
+      to: [{ email: "asharrashid18@gmail.com" },{email:"iaqsaashraf@gmail.com"},{email:"maria.shahid012@gmail.com"}], // Replace with the recipient's email
+      subject: "Contact Form Submission | Mashaq",
+      htmlContent: `
+        <p className="sm:text-base text-sm"><strong>Last Name:</strong> ${name}</p>
+        <p className="sm:text-base text-sm"><strong>Email:</strong> ${email}</p>
+        <p className="sm:text-base text-sm"><strong>Phone:</strong> ${phone}</p>
+        <p className="sm:text-base text-sm"><strong>Message:</strong> ${message}</p>
+      `,
+    };
+
+    fetch("https://api.sendinblue.com/v3/smtp/email", {
+      method: "POST",
+      headers: {
+        "api-key": apiKey,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(emailData),
+    })
+      .then((response) => {
+        if (response.ok) {
+          toast.success("Email sent successfully");
+          console.log(response);
+          // Handle success response
+        } else {
+          if (response.status === 400) {
+            toast.error(
+              "There is an issue sending the email. Please check your email address and try again."
+            );
+          } else {
+            toast.error(
+              "There is an issue sending the email. Please try again later."
+            );
+          }
+        }
+      })
+      .catch((error) => {
+        toast.error("Email not sent, try again");
+        console.error(error);
+        // Handle error response
+      });
+  };
+
   return (
-    <div>
-      {/*
-  Heads up! 👋
-
-  Plugins:
-    - @tailwindcss/forms
-*/}
-
+    <>
       <section className="bg-gray-100">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
@@ -45,7 +101,7 @@ const ContactForm = () => {
             </div>
 
             <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-              <form action="" className="space-y-4">
+              <form onSubmit={handleFormSubmit}  className="space-y-4">
                 <div>
                   <label className="sr-only" htmlFor="name">
                     Name
@@ -55,6 +111,8 @@ const ContactForm = () => {
                     placeholder="Name"
                     type="text"
                     id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
 
@@ -68,6 +126,8 @@ const ContactForm = () => {
                       placeholder="Email address"
                       type="email"
                       id="email"
+                      onChange={(e) => setEmail(e.target.value)}
+                      value={email}
                     />
                   </div>
 
@@ -80,6 +140,8 @@ const ContactForm = () => {
                       placeholder="Phone Number"
                       type="tel"
                       id="phone"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
                     />
                   </div>
                 </div>
@@ -94,6 +156,8 @@ const ContactForm = () => {
                     placeholder="Message"
                     rows="8"
                     id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
 
@@ -110,7 +174,7 @@ const ContactForm = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
