@@ -58,6 +58,31 @@ const Sidebar = ({ bg }) => {
             <div className="px-4 py-6">
               <ul className="mt-6 space-y-1">
                 <li>
+                  <Link
+                    href="/"
+                    className="text-sm font-medium px-4 py-2 hover:bg-bisque-0 hover:text-brown-0 block rounded-lg"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/about-us"
+                    className="text-sm font-medium px-4 py-2 hover:bg-bisque-0 hover:text-brown-0 block rounded-lg"
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/shop"
+                    className="text-sm font-medium px-4 py-2 hover:bg-bisque-0 hover:text-brown-0 block rounded-lg"
+                  >
+                    Shop
+                  </Link>
+                </li>
+
+                <li>
                   <details className="group [&_summary::-webkit-details-marker]:hidden">
                     <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-black hover:bg-bisque-0 hover:text-brown-0">
                       <p
@@ -174,14 +199,6 @@ const Sidebar = ({ bg }) => {
                       </li>
                     </ul>
                   </details>
-                </li>
-                <li>
-                  <Link
-                    href="/about-us"
-                    className="text-sm font-medium px-4 py-2 hover:bg-bisque-0 hover:text-brown-0 block rounded-lg"
-                  >
-                    About Us
-                  </Link>
                 </li>
                 <li>
                   <Link
