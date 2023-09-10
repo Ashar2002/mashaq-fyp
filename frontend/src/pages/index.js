@@ -4,16 +4,19 @@ import Search from "@/components/Search";
 import BestSelling from "@/components/BestSelling";
 import ImageUpload from "@/components/ImageUpload";
 import Footer from "@/components/Footer";
-import imageUrlBuilder from '@sanity/image-url'
+import imageUrlBuilder from "@sanity/image-url";
 import { createClient } from "@sanity/client";
+import ChatBot from "@/components/ChatBot";
 
 export default function Home({ products }) {
+  
   return (
     <div className="relative">
       <Sidebar />
       <div className="">
         <Banner />
       </div>
+      <ChatBot />
       <Search />
       <ImageUpload />
       <BestSelling products={products} />
