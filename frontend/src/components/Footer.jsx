@@ -120,21 +120,21 @@ const Footer = () => {
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a className=" transition text-bisque-0" href="/">
+                  <Link className=" transition text-bisque-0" href="/mens/topwear">
                     Top Wear
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a className=" transition text-bisque-0" href="/">
+                  <Link className=" transition text-bisque-0" href="/mens/bottomwear">
                     Bottom Wear
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a className=" transition text-bisque-0" href="/">
+                  <Link className=" transition text-bisque-0" href="/mens/footwear">
                     Foot Wear
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -144,26 +144,26 @@ const Footer = () => {
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a className=" transition text-bisque-0" href="/">
+                  <Link className=" transition text-bisque-0" href="/women/topwear">
                     Top Wear
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a className=" transition text-bisque-0" href="/">
+                  <Link className=" transition text-bisque-0" href="/women/bottomwear">
                     Bottom Wear
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a className=" transition text-bisque-0" href="/">
+                  <Link className=" transition text-bisque-0" href="/women/footwear">
                     Foot Wear
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className=" transition text-bisque-0" href="/">
+                  <Link className=" transition text-bisque-0" href="/women/bags">
                     Bags
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -172,21 +172,21 @@ const Footer = () => {
               <p className="text-xl font-medium text-bisque-0">Quick Links</p>
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a className=" transition text-bisque-0" href="/">
+                  <Link className=" transition text-bisque-0" href="/about-us">
                     About Us
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a className=" transition text-bisque-0" href="/">
+                  <Link className=" transition text-bisque-0" href="/contact-us">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a className=" transition text-bisque-0" href="/">
+                  <Link className=" transition text-bisque-0" href="/shop">
                     Shop
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

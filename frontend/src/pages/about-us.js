@@ -1,5 +1,6 @@
 import { aboutPage } from "@/assets";
 import Footer from "@/components/Footer";
+import InnerBanner from "@/components/InnerBanner";
 import Sidebar from "@/components/SideBar";
 import Image from "next/image";
 import React from "react";
@@ -8,6 +9,7 @@ const aboutus = () => {
   return (
     <>
       <Sidebar bg="bg-bisque-0" />
+      <InnerBanner onPage="About Us" inner_banner="aboutBanner" />
       <div className="container mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="w-full">
           <p className="text-lightbrown-0 md:text-2xl text-xl uppercase tracking-wider font-nunito mb-3">

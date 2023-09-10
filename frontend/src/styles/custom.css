@@ -32,3 +32,10 @@
 .shopBanner{
   background: url(../assets/images/shopBanner.jpeg);
 }
+.aboutBanner{
+  background: url(../assets/images/aboutBanner.jpeg);
+}
+.contactBanner{
+  background: url(../assets/images/contactBanner.jpeg);
+  background-position: 0px -310px !important;
+}

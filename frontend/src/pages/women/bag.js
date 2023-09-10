@@ -6,28 +6,27 @@ import { createClient } from "@sanity/client";
 import { imageUrlBuilder } from "@sanity/image-url";
 import React from "react";
 
-const topwear = ({ products, subCategory, mainCategory }) => {
+const bottomwear = ({ products, subCategory, mainCategory }) => {
   const mc = mainCategory;
   const filteredProduct = products.filter((item) => {
     return (
       item.mainCategory._ref ===
-        mainCategory.find((cat) => cat.title === "Men")._id &&
+        mainCategory.find((cat) => cat.title === "Female")._id &&
       item.subCategory._ref ===
-        subCategory.find((cat) => cat.title === "Mens Top wear")._id
+        subCategory.find((cat) => cat.title === "Womens bag")._id
     );
   });
-
   return (
     <div>
       <Sidebar bg="bg-bisque-0" />
-      <InnerBanner inner_banner="shopBanner" onPage="Top Wear" />
-      <ProductList title="Top Wear Products" products={filteredProduct} />
+      <InnerBanner inner_banner="shopBanner" onPage="Bags" />
+      <ProductList title="Bags Products" products={filteredProduct} />
       <Footer />
     </div>
   );
 };
 
-export default topwear;
+export default bottomwear;
 export async function getServerSideProps(context) {
   const client = createClient({
     projectId: "q5r6hvs1",

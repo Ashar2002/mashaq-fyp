@@ -3,10 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const ProductList = ({ products }) => {
+const ProductList = ({ products,title }) => {
   return (
     <>
       <div className="container mx-auto">
+        <h1 className="text-brown-0 text-4xl font-bold text-center mt-10">
+          {title}
+        </h1>
         <div className="grid place-items-center h-full place-content-center w-full 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-16 justify-between items-start gap-x-3 gap-y-5">
           {products?.map((item, index) => (
             <Link

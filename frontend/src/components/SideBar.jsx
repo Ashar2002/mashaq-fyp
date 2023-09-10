@@ -85,13 +85,10 @@ const Sidebar = ({ bg }) => {
                 <li>
                   <details className="group [&_summary::-webkit-details-marker]:hidden">
                     <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-black hover:bg-bisque-0 hover:text-brown-0">
-                      <p
-                        // href="/categories"
-                        className="text-sm font-medium"
-                      >
+                      <Link href="/mens" className="text-sm font-medium">
                         {" "}
                         Men's{" "}
-                      </p>
+                      </Link>
 
                       <span className="shrink-0 transition duration-300 group-open:-rotate-180">
                         <svg
@@ -111,29 +108,28 @@ const Sidebar = ({ bg }) => {
 
                     <ul className="mt-2 space-y-1 px-4">
                       <li>
-                        <a
+                        <Link
                           href="/mens/topwear"
                           className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-brown-0"
                         >
                           Top Wear
-                        </a>
+                        </Link>
                       </li>
-
                       <li>
-                        <a
-                          href=""
+                        <Link
+                          href="/mens/bottomwear"
                           className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-brown-0"
                         >
                           Bottom Wear
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <Link
+                          href="/mens/footwear"
                           className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-brown-0"
                         >
                           Foot Wear
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </details>
@@ -142,7 +138,7 @@ const Sidebar = ({ bg }) => {
                 <li>
                   <details className="group [&_summary::-webkit-details-marker]:hidden">
                     <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-black hover:bg-bisque-0 hover:text-brown-0">
-                      <Link href="/categories" className="text-sm font-medium">
+                      <Link href="/women" className="text-sm font-medium">
                         {" "}
                         Women's{" "}
                       </Link>
@@ -165,37 +161,36 @@ const Sidebar = ({ bg }) => {
 
                     <ul className="mt-2 space-y-1 px-4">
                       <li>
-                        <a
-                          href=""
+                        <Link
+                          href="/women/topwear"
                           className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-brown-0"
                         >
                           Top Wear
-                        </a>
+                        </Link>
                       </li>
-
                       <li>
-                        <a
-                          href=""
+                        <Link
+                          href="/women/topwear"
                           className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-brown-0"
                         >
                           Bottom Wear
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <Link
+                          href="/women/footwear"
                           className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-brown-0"
                         >
                           Foot Wear
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <Link
+                          href="/women/bags"
                           className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-brown-0"
                         >
                           Bags
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </details>

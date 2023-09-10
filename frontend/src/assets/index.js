@@ -11,8 +11,10 @@ import men from "../assets/images/mens.png"
 import women from "../assets/images/women.png"
 import aboutPage from "../assets/images/aboutPage.png"
 import shopBanner from "../assets/images/shopBanner.jpeg"
+import aboutBanner from "../assets/images/aboutBanner.jpeg"
 
 export{
+    aboutBanner,
     shopBanner,
     aboutPage,
     men,
