@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import imageUrlBuilder from "@sanity/image-url";
 import { createClient } from "@sanity/client";
 import ChatBot from "@/components/ChatBot";
+import AboutUs from "@/components/AboutUs";
 
 export default function Home({ products }) {
   return (
@@ -15,11 +16,12 @@ export default function Home({ products }) {
       <div className="">
         <Banner />
       </div>
-      <ChatBot />
-      <Search products={products}/>
+      <AboutUs />
+      <Search products={products} />
       <ImageUpload />
       <BestSelling products={products} />
       <Footer />
+      <ChatBot />
     </div>
   );
 }

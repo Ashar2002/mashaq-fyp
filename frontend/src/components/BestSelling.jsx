@@ -13,23 +13,23 @@ const BestSelling = ({ products }) => {
       <h1 className="text-4xl text-brown-0 font-bold text-center">
         Best Selling Products
       </h1>
-      <div className="flex mt-8 gap-x-2 gap-y-4 mx-1 lg:flex-nowrap flex-wrap lg:justify-between justify-center items-start">
+      <div className="flex mt-8 gap-x-2 gap-y-4 mx-1 lg:flex-nowrap flex-wrap lg:justify-between justify-center items-start  gap-x-3 gap-y-5">
         {top5Products?.map((item, index) => (
           <Link
             href={`/product/${item._id}`}
-            className="flex flex-col items-center border border-brown-0 rounded-lg pt-3"
+            className="max-w-[280px] w-full flex flex-col items-center border border-brown-0 rounded-lg"
           >
             <Image
               // src={shirt1}
               src={urlFor(item.image).url()}
               alt="shirt1"
               width={300}
-              className="h-[300px] object-cover w-full max-w-[300px]"
+              className="h-[300px] object-cover w-full max-w-[300px] rounded-t-lg"
               height={300}
             />
             <div className="bg-bisque-0 w-full p-2 rounded-lg rounded-t-none">
               <p className="text-gray-500 text-lg">{item.title}</p>
-              <p className="text-black font-bold">${item.price}.00</p>
+              <p className="text-black font-bold">Rs. {item.price}.00</p>
             </div>
           </Link>
         ))}

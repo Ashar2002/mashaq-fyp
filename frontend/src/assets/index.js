@@ -7,8 +7,12 @@ import gitIcon1 from "../assets/images/git_icon.svg"
 import gitIcon2 from "../assets/images/git_icon2.svg"
 import bannerside1 from "../assets/images/bannerside1.jpg"
 import bannerside2 from "../assets/images/bannerside2.jpg"
+import men from "../assets/images/mens.png"
+import women from "../assets/images/women.png"
 
 export{
+    men,
+    women,
     bannerside1,
     bannerside2,
     main_logo,

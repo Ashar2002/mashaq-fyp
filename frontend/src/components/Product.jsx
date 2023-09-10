@@ -9,7 +9,7 @@ const Product = ({ products, mainCategory, subCategory }) => {
   const filteredCategory = mainCategory?.filter((item) => {
     return item._id === products[0]?.mainCategory?._ref;
   });
-    const filteredSubCategory = subCategory.filter((item) => {
+  const filteredSubCategory = subCategory.filter((item) => {
     return item._id === products[0]?.subCategory?._ref;
   });
 
@@ -48,7 +48,7 @@ const Product = ({ products, mainCategory, subCategory }) => {
           </h1>
           <p className="py-2">{products[0]?.description}</p>
 
-          <p className="text-2xl py-2 font-bold">$50</p>
+          <p className="text-2xl py-2 font-bold">Rs. {products[0]?.price} /-</p>
 
           <div className="flex items-center flex-wrap justify-left gap-5">
             <div className="quantity-container py-1 w-full bg-bisque-0 rounded-lg flex items-center justify-between px-6 lg:px-3 font-bold sm:mr-3 lg:mr-5 max-w-[200px]">
