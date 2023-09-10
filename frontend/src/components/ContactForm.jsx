@@ -6,23 +6,24 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  let isButtonDisabled = false;
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // api call here
-    if (name && phone && email && message) {
+
+    if (name && email && phone && message) {
       sendEmail();
     } else {
-      toast.error("please fill all the fields...");
+      toast.error("Please fill in all fields.");
     }
   };
 
   const sendEmail = () => {
     const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
-    // Build the email request data
     const emailData = {
       sender: { email: "asharrashid18@gmail.com" },
-      to: [{ email: "asharrashid18@gmail.com" },{email:"iaqsaashraf@gmail.com"},{email:"maria.shahid012@gmail.com"}], // Replace with the recipient's email
+      to: [{ email: "asharrashid18@gmail.com" }],
       subject: "Contact Form Submission | Mashaq",
       htmlContent: `
         <p className="sm:text-base text-sm"><strong>Last Name:</strong> ${name}</p>
@@ -44,7 +45,8 @@ const ContactForm = () => {
         if (response.ok) {
           toast.success("Email sent successfully");
           console.log(response);
-          // Handle success response
+          isButtonDisabled = true; // Disable the button temporarily
+          resetForm(); // Reset the form
         } else {
           if (response.status === 400) {
             toast.error(
@@ -60,8 +62,15 @@ const ContactForm = () => {
       .catch((error) => {
         toast.error("Email not sent, try again");
         console.error(error);
-        // Handle error response
       });
+  };
+
+  const resetForm = () => {
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+    isButtonDisabled = false; // Enable the button
   };
 
   return (
@@ -101,7 +110,7 @@ const ContactForm = () => {
             </div>
 
             <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-              <form onSubmit={handleFormSubmit}  className="space-y-4">
+              <form onSubmit={handleFormSubmit} className="space-y-4">
                 <div>
                   <label className="sr-only" htmlFor="name">
                     Name
@@ -164,9 +173,12 @@ const ContactForm = () => {
                 <div className="mt-4">
                   <button
                     type="submit"
-                    className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+                    className={`inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto ${
+                      isButtonDisabled ? "disabled:opacity-50" : ""
+                    }`}
+                    disabled={isButtonDisabled}
                   >
-                    Send Enquiry
+                    {isButtonDisabled ? "Form Submitted" : "Send Enquiry"}
                   </button>
                 </div>
               </form>
