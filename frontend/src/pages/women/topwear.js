@@ -22,8 +22,8 @@ const footwear = ({ products, subCategory, mainCategory }) => {
   return (
     <div>
       <Sidebar bg="bg-bisque-0" />
-      <InnerBanner inner_banner="shopBanner" onPage="Foot Wear" />
-      <ProductList title="Foot Wear Products" products={filteredProduct} />
+      <InnerBanner inner_banner="shopBanner" onPage="Top Wear" />
+      <ProductList title="Top Wear Products" products={filteredProduct} />
       <Footer />
     </div>
   );

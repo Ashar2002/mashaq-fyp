@@ -181,7 +181,7 @@ const Footer = () => {
                 <li>
                   <Link
                     className=" transition text-bisque-0"
-                    href="/women/bags"
+                    href="/women/bag"
                   >
                     Bags
                   </Link>

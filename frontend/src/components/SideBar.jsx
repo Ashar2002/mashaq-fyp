@@ -186,7 +186,7 @@ const Sidebar = ({ bg }) => {
                       </li>
                       <li>
                         <Link
-                          href="/women/bags"
+                          href="/women/bag"
                           className="block rounded-lg px-4 py-2 text-sm font-medium text-black hover:bg-bisque-0 hover:text-brown-0"
                         >
                           Bags
